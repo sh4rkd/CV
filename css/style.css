@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400&display=swap');
+/*	RESET	*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: 'Titillium Web';
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**/
+.profile{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+    background: #F9FF8A;
+    width: 21rem;
+	height: 7rem;
+	border-radius: 10%;
+}
+
+.profile h1{	
+    font-size: 1.7em;
+	font-weight: bold;
+}
+
+
+.profile img{
+    width:100px;
+    border-radius:75px;
+	border: 5px solid #FA9A62;
+	float:left;
+	margin: -3.5rem -3rem;
+}
+
+.profile p{
+    font-size: 1rem;
+}
+
+.profile-letters{
+	font-size: 1.2rem;
+}
+
+.profile-letters h2{
+	padding-top: 1rem;
+}
+
+.profile-letters p{
+	margin: .5rem;
+}
+
+.profile-letters span{
+	font-weight: 550;
+}
+
+h2{
+    color: #FA9A62;
+    font-weight: bold   
+}
+
+body{
+	background: #EFEFEF;
+}
+
+.card{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	background: #FFFFFF;
+	width: 20rem;
+	border-radius: 1.5rem;
+	margin-bottom: 1.4rem;
+	padding-bottom: 2rem;
+}
+
+.card p,h2,li{
+	width: 17rem;
+	margin: .5rem 0;
+}
+
+.card p{
+	padding: .4rem 0;
+}
+
+.card span{
+	font-weight: bold;
+}
+
+.card li{
+	text-align: center;
+	list-style-position: inside;
+	list-style:none
+}
+
+.card li::before{
+	display: inline-block;
+    content: '\f046';
+    font-family: 'FontAwesome';
+	padding-left: 1rem;
+}
+
+.skills-order li::before, .card-training li::before{
+	content: '';
+}
+
+.sections-rows{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding-top: 15vh;
+}
+
+.second-section-row{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding: 7vh 0;
+}
+
+.second-section-row span{
+	font-weight:bold;
+}
+
+.line{
+	height: 2px;
+	background: #000000;
+	background: -moz-linear-gradient(left, #000000 0%, #000000 30%, #FA9A62 30%, #FA9A62 60%, #F9FF8A 60%, #F9FF8A 100%);
+	background: -webkit-linear-gradient(left, #000000 0%,#000000 30%,#FA9A62 30%,#FA9A62 60%,#F9FF8A 60%,#F9FF8A 100%);
+	background: -o-linear-gradient(left, #000000 0%,#000000 30%,#FA9A62 30%,#FA9A62 60%,#F9FF8A 60%,#F9FF8A 100%);
+	background: -ms-linear-gradient(left, #000000 0%,#000000 30%,#FA9A62 30%,#FA9A62 60%,#F9FF8A 60%,#F9FF8A 100%);
+	background: linear-gradient(to right, #000000 0%,#000000 30%,#FA9A62 30%,#FA9A62 60%,#F9FF8A 60%,#F9FF8A 100%);
+}
+
+* {box-sizing:border-box}
+
+.container {
+	width: 50%;
+	background-color: #EFEFEF;
+	border-radius: 75px;
+}
+
+.skills {
+	text-align: right;
+	color: white; 
+	border-radius: 75px;
+}
+
+.skills-order{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.java {width: 90%; background: linear-gradient(94deg, rgba(250,180,108,1) 0%, rgba(250,218,123,1) 28%, rgba(250,154,98,1) 100%);}
+.python{width: 70%; background: linear-gradient(94deg, rgba(250,180,108,1) 0%, rgba(250,218,123,1) 28%, rgba(250,154,98,1) 100%);}
+.javascript{width: 85%; background: linear-gradient(94deg, rgba(250,180,108,1) 0%, rgba(250,218,123,1) 28%, rgba(250,154,98,1) 100%);}
+.html{width: 80%; background: linear-gradient(94deg, rgba(250,180,108,1) 0%, rgba(250,218,123,1) 28%, rgba(250,154,98,1) 100%);}
+.css {width: 80%; background: linear-gradient(94deg, rgba(250,180,108,1) 0%, rgba(250,218,123,1) 28%, rgba(250,154,98,1) 100%);}
+.sass {width: 90%; background: linear-gradient(94deg, rgba(250,180,108,1) 0%, rgba(250,218,123,1) 28%, rgba(250,154,98,1) 100%);}
